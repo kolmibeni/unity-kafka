@@ -100,8 +100,8 @@ public class OP2MoveDoor : MonoBehaviour
             {
                 config = new ConsumerConfig
                 {
-                    GroupID = "",
-                    BootstrapServers = "",
+                    GroupID = "gid-unity-test",
+                    BootstrapServers = "140.116.86.241:29092,140.116.86.241:29093,140.116.86.241:29094",
                     AutoOffsetReset = AutoOffsetReset.Earliest
                 };
 
@@ -109,7 +109,7 @@ public class OP2MoveDoor : MonoBehaviour
 
                 using (var c = new ConsumerBuilder<Ignore, string>(config).Build())
                 {
-                    c.Subscribe("networktopicdata");
+                    c.Subscribe("unity-test");
                     Debug.Log("Kafka - Subscribed");
 
                     CancellationTokenSource cts = new CancellationTokenSource();
