@@ -1,0 +1,37 @@
+====  手臂關節角度  ================
+	joint1 = evenMessage.joint1;
+	joint2 = evenMessage.joint2;
+	joint3 = evenMessage.joint3;
+	joint4 = evenMessage.joint4;
+	joint5 = evenMessage.joint5;
+	joint6 = evenMessage.joint6;
+====================================
+
+ACC = evenMessage.ACC //工件A夾爪夾緊
+	ACR = evenMessage.ACR //工件A夾爪放鬆
+	BCC = evenMessage.BCC //工件B夾爪夾緊
+	BCR = evenMessage.BCR  //工件B夾爪放鬆
+	changeJigClaw = evenMessage.changeJigClaw //更換托盤夾爪
+	changeWpClaw = evenMessage.changeWpClaw //更換工件夾爪
+	CT350JigIn = evenMessage.CT350JigIn //CT350治具上料
+	CT350JigOut = evenMessage.CT350JigOut //CT350治具下料
+	CT350WpChange = evenMessage.CT350WpChange //CT350換工件(DO[59]+[60]組合)
+	CT350WpIn = evenMessage.CT350WpIn //CT350工件上料
+	CT350WpOut = evenMessage.CT350WpOut //CT350工件下料
+	CV1Out = evenMessage.CV1Out //素材站取料
+	CV2In = evenMessage.CV2In //成品站入料
+	EQ300WpIn = evenMessage.EQ300WpIn //EQ300(量測站)工件上料
+	EQ300WpOut = evenMessage.EQ300WpOut //EQ300(量測站)工件下料
+	jigAIn = evenMessage.jigAIn //治具A上料
+	jigAOut = evenMessage.jigAOut //治具A下料
+	jigBIn = evenMessage.jigBIn//治具B上料
+	jigBOut = evenMessage.jigBOut//治具B下料
+	jigCIn = evenMessage.jigCIn//治具C上料
+	jigCOut = evenMessage.jigCOut//治具C下料
+	// projectA = evenMessage.projectA //A流程
+	// projectB = evenMessage.projectB //B流程
+	// projectC = evenMessage.projectC //C流程
+	schunkCC = evenMessage.schunkCC //治具爪夾緊取托盤
+	schunkCR = evenMessage.schunkCR //治具爪放鬆放托盤
+	toolChangeCC = evenMessage.toolChangeCC //快換夾緊
+	toolChangeCR = evenMessage.toolChangeCR //快換放鬆
