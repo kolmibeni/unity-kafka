@@ -62,7 +62,7 @@ namespace Subscriber
                         OP_machine_data op_msg = JsonConvert.DeserializeObject<DTiM.OP_machine_data>(msg_clean);
                         
                         //Broadcast the msg_clean string to all connected websocket client
-                        wssv.WebSocketServices.Broadcast(msg_clean);
+                        wssv.WebSocketServices.Broadcast(msg_clean + "SendingTime:" + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.ffff"));
                         Console.WriteLine("\nBroadcast to WebSocket at port:{0}, with path:{1}.",port,"Echo");
                         
                     }
